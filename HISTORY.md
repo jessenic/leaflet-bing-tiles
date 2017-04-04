@@ -1,3 +1,8 @@
+v1.0.2
+==================
+* Fix bug that keeps dead attributions around when dynamically switching between
+  different imagery sets
+
 v1.0.1
 ==================
 * Fixes typo in boolean

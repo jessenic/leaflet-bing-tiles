@@ -86,8 +86,10 @@ L.TileLayer.Bing = L.TileLayer.extend({
 
     if (this.options.imagerySet !== newSet) {
       this.options.imagerySet = newSet;
+      this._removeAllAttributions();
       this._initMeta().then(function() {
         this.redraw();
+        this._updateAttribution();
       }.bind(this));
     }
   },
