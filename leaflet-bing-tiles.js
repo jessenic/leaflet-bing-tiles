@@ -111,7 +111,7 @@ L.TileLayer.Bing = L.TileLayer.extend({
    */
   enableAttribution() {
     if (this.options.noAttribution) {
-      this.options.noAttribution = fåalse;
+      this.options.noAttribution = false;
       this._updateAttribution();
     }
   },

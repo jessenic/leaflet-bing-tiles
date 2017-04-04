@@ -1,3 +1,7 @@
+v1.0.1
+==================
+* Fixes typo in boolean
+
 v1.0.0
 ==================
 * Makes all options - including the Bing Maps API Key, imagery set, etc., fully
