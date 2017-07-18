@@ -111,7 +111,7 @@ L.TileLayer.Bing = L.TileLayer.extend({
    * Enables adding attribution for the visible Bing Map tiles to the map.
    * Immediately adds attributions for the current visible tiles.
    */
-  enableAttribution() {
+  enableAttribution: function() {
     if (this.options.noAttribution) {
       this.options.noAttribution = false;
       this._updateAttribution();
@@ -122,7 +122,7 @@ L.TileLayer.Bing = L.TileLayer.extend({
    * Disables adding attribution for the visible Bing Map tiles to the map.
    * Clears any existing attributions from this layer.
    */
-  disableAttribution() {
+  disableAttribution: function() {
     if (!this.options.noAttribution) {
       this.options.noAttribution = true;
       this._removeAllAttributions();
@@ -361,7 +361,7 @@ L.TileLayer.Bing = L.TileLayer.extend({
     return providers;
   },
 
-  _removeAllAttributions(map) {
+  _removeAllAttributions: function(map) {
     map = map || this._map
     if (!map || !Array.isArray(this._attributions) || !this._attributions.length) return;
 
